@@ -1,0 +1,91 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f5f9; /* Light Blue Background */
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background-color: #2c3e50; /* Dark Blue Header Background */
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* White Content Background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Dark Blue Text Color */
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.payment-method {
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.payment-details {
+    display: none;
+}
+
+.payment-details h3 {
+    color: #2c3e50; /* Dark Blue Text Color */
+}
+
+button {
+    background-color: #e74c3c; /* Red Button Color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+}
+
+button:hover {
+    background-color: #c0392b; /* Darker Red Hover Color */
+}
+
+footer {
+    background-color: #2c3e50; /* Dark Blue Footer Background */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top:auto
+}

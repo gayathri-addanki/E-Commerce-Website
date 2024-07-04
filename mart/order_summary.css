@@ -1,0 +1,116 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.order-item {
+    flex: 0 0 calc(50% - 20px);
+    margin: 0 10px 20px 10px;
+    text-align: center;
+}
+
+.order-item img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.order-item h3 {
+    margin-top: 10px;
+}
+
+.order-item p {
+    margin-bottom: 10px;
+}
+
+.order-item span {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+.order-summary {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-summary p {
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

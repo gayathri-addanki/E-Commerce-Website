@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Mart - Payment</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <header>
+        <h1>Star Mart - Payment</h1>
+        <nav>
+            <ul>
+                <li><a href="online.html">Home</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Select Payment Method</h2>
+        <div class="payment-methods">
+            <div class="payment-method">
+                <input type="radio" id="creditDebit" name="paymentMethod" value="creditDebit">
+                <label for="creditDebit">Credit/Debit Card</label>
+            </div>
+
+            <div class="payment-method">
+                <input type="radio" id="netBanking" name="paymentMethod" value="netBanking">
+                <label for="netBanking">Net Banking</label>
+            </div>
+
+            <div class="payment-method">
+                <input type="radio" id="upi" name="paymentMethod" value="upi">
+                <label for="upi">UPI</label>
+            </div>
+        </div>
+
+        <div class="payment-details" id="creditDebitDetails">
+            <h3>Credit/Debit Card Details</h3>
+            <!-- Add form fields for card details -->
+        </div>
+
+        <div class="payment-details" id="netBankingDetails">
+            <h3>Net Banking Details</h3>
+            <!-- Add form fields for net banking details -->
+        </div>
+
+        <div class="payment-details" id="upiDetails">
+            <h3>UPI Details</h3>
+            <div class="upi-options">
+                <input type="radio" id="googlePay" name="upiOption" value="googlePay">
+                <label for="googlePay">Google Pay</label>
+
+                <input type="radio" id="phonePe" name="upiOption" value="phonePe">
+                <label for="phonePe">PhonePe</label>
+
+                <input type="radio" id="paytm" name="upiOption" value="paytm">
+                <label for="paytm">Paytm</label>
+            </div>
+
+            <label for="upiId">Enter UPI ID:</label>
+            <input type="text" id="upiId" name="upiId" required>
+        </div>
+
+        <button>Pay Now</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Star Mart. Your One-Stop Shop. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add JavaScript to show/hide payment details based on the selected payment method
+        const creditDebitDetails = document.getElementById('creditDebitDetails');
+        const netBankingDetails = document.getElementById('netBankingDetails');
+        const upiDetails = document.getElementById('upiDetails');
+
+        document.querySelectorAll('input[name="paymentMethod"]').forEach((radio) => {
+            radio.addEventListener('change', (event) => {
+                if (event.target.value === 'creditDebit') {
+                    creditDebitDetails.style.display = 'block';
+                    netBankingDetails.style.display = 'none';
+                    upiDetails.style.display = 'none';
+                } else if (event.target.value === 'netBanking') {
+                    creditDebitDetails.style.display = 'none';
+                    netBankingDetails.style.display = 'block';
+                    upiDetails.style.display = 'none';
+                } else if (event.target.value === 'upi') {
+                    creditDebitDetails.style.display = 'none';
+                    netBankingDetails.style.display = 'none';
+                    upiDetails.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* styles.css */
+
+/* Reset some default styles for better cross-browser consistency */
+body, h1, h2, h3, p, ul, li, button, form, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    flex: 0 0 calc(33.3333% - 20px);
+    margin: 0 10px 20px 10px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: green; /* Set the background color to light green */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+button:hover {
+    background-color: #0080ff; /* Change the background color to blue on hover */
+}
+
+footer {
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style form elements */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+form input:hover, form select:hover, form textarea:hover {
+    background-color: #ddd; /* Change the background color to gray on hover */
+}

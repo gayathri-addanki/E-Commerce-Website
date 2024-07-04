@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Mart - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <h1>Star Mart - Login</h1>
+        <nav>
+            <ul>
+                <li><a href="online.html">Home</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Login </h2>
+        <form action="login_process.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="captcha">Enter the text from the image:</label>
+            <img src="cap.jpg" alt="CAPTCHA Image">
+            <input type="text" id="captcha" name="captcha" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Star Mart. Your One-Stop Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
